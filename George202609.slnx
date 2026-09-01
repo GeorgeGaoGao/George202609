@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
+  <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
 </Solution>
