@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
   <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
+  <Project Path="_02.PanelExercise/_02.PanelExercise.csproj" Id="85a4447b-80b9-434f-9055-47116fff0420" />
+  <Project Path="_03.ContentControlExercise/_03.ContentControlExercise.csproj" Id="64e04f9e-55f5-4976-be8b-22d84e2268be" />
 </Solution>

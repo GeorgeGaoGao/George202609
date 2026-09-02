@@ -6,7 +6,26 @@
         xmlns:local="clr-namespace:_01.AppLifetimeExercise"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox Name="myListBox"/>
-    </Grid>
+    <UniformGrid PreviewMouseUp="Grid_PreviewMouseUp" Rows="3" FirstColumn="2">
+       
+        <ListBox Name="myListBox" Background="Gray" Margin="10"/>
+        <Image Source="/Images/textjpg.jpg" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Image.Clip>
+                <EllipseGeometry RadiusX="100" RadiusY="200" Center="120 200">
+
+                </EllipseGeometry>
+            </Image.Clip>
+        </Image>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+    </UniformGrid>
 </Window>
