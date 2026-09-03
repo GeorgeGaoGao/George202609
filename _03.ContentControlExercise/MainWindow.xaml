@@ -4,33 +4,38 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_03.ContentControlExercise"
+        xmlns:georgedll="clr-namespace:GeorgeWpfDLL;assembly=GeorgeWpfDLL"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="ContentControlStyle1" TargetType="{x:Type ContentControl}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ContentControl}">
-                        <Border Background="{TemplateBinding Background}" >
-                            <ContentPresenter TextElement.Foreground="{TemplateBinding Foreground}" />
-                           
-                        </Border>
-                        
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+   
     <Grid>
-        <ContentControl  Background="Red" Margin="20" Foreground="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" ItemsSource="{Binding People}" SelectedItem="{Binding SelectedPerson}" DisplayMemberPath="Name"/>
+        <Button  Width="300" Height="150">
+            <StackPanel>
+                <TextBlock Text="hello world"/>
+                <Rectangle Width="100" Height="50" Stroke="Red" StrokeThickness="2" Fill="Orange"/>
+            </StackPanel>
+        </Button>
+        <ContentControl Grid.Column="1" Background="Red" Margin="20" Foreground="White" Content="{Binding SelectedPerson}">
             <ContentControl.ContentTemplate>
-                <DataTemplate>
+                <DataTemplate >
                     <Border Background="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20" CornerRadius="20">
-                        <TextBlock Text="{Binding .}" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel >
+                            <TextBlock Text="{Binding Age}"/>
+                            <TextBlock Text="{Binding Path=Address}"/>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </StackPanel>
+                        <!--<TextBlock Text="{Binding .}" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>-->
                     </Border>  
                 </DataTemplate>
             </ContentControl.ContentTemplate>
-           this is a text
         </ContentControl>
     </Grid>
 </Window>
