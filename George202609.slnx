@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/其它文件/">
+    <File Path="C:/Users/Administrator/Desktop/金属粘结剂喷射3D打印中下供粉与上供粉路线：设备、机理、验证边界与选型研究.md" />
+  </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
   <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
   <Project Path="_02.PanelExercise/_02.PanelExercise.csproj" Id="85a4447b-80b9-434f-9055-47116fff0420" />
