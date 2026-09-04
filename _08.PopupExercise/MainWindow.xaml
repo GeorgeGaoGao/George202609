@@ -1,0 +1,26 @@
+﻿<Window x:Class="_08.PopupExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08.PopupExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <CheckBox Name="myCheckBox" Content="是否显示弹出菜单" Height="30"/>
+            <Popup IsOpen="{Binding ElementName=myCheckBox, Path=IsChecked}" 
+               PlacementTarget="{Binding ElementName=myCheckBox}"
+               
+               >
+                <Border Background="Green" Width="200" Height="100">
+                    <StackPanel>
+                        <TextBlock Text="study wpf"/>
+                    <Border BorderBrush="Red" BorderThickness="2">
+                        <Rectangle Width="120" Height="20" Stroke="White"/>
+                    </Border>
+                        <TextBlock Text="go go go "/>
+                    </StackPanel>
+                </Border>
+            </Popup>
+        </StackPanel>
+</Window>

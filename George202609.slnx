@@ -7,4 +7,5 @@
   <Project Path="_05.CheckBoxExercise/_05.CheckBoxExercise.csproj" Id="895bd3e8-0b25-4fa2-9808-4d701b3fdc7c" />
   <Project Path="_06.TextBoxExercise/_06.TextBoxExercise.csproj" Id="716b8d59-d5ad-432d-8592-0f64c59d6e54" />
   <Project Path="_07.ToolTipExercise/_07.ToolTipExercise.csproj" Id="4b458f8e-c8d6-4602-af4b-9c52a01e33e1" />
+  <Project Path="_08.PopupExercise/_08.PopupExercise.csproj" Id="1032f1e1-e377-469f-b440-905c504d6496" />
 </Solution>
