@@ -1,11 +1,10 @@
 <Solution>
-  <Folder Name="/其它文件/">
-    <File Path="C:/Users/Administrator/Desktop/金属粘结剂喷射3D打印中下供粉与上供粉路线：设备、机理、验证边界与选型研究.md" />
-  </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
   <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
   <Project Path="_02.PanelExercise/_02.PanelExercise.csproj" Id="85a4447b-80b9-434f-9055-47116fff0420" />
   <Project Path="_03.ContentControlExercise/_03.ContentControlExercise.csproj" Id="64e04f9e-55f5-4976-be8b-22d84e2268be" />
   <Project Path="_04.ToggleButtonExercise/_04.ToggleButtonExercise.csproj" Id="32a64892-6dd6-4b66-b9ba-5d367a4b5bfd" />
   <Project Path="_05.CheckBoxExercise/_05.CheckBoxExercise.csproj" Id="895bd3e8-0b25-4fa2-9808-4d701b3fdc7c" />
+  <Project Path="_06.TextBoxExercise/_06.TextBoxExercise.csproj" Id="716b8d59-d5ad-432d-8592-0f64c59d6e54" />
+  <Project Path="_07.ToolTipExercise/_07.ToolTipExercise.csproj" Id="4b458f8e-c8d6-4602-af4b-9c52a01e33e1" />
 </Solution>

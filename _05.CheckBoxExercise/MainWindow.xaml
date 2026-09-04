@@ -9,11 +9,12 @@
     <Grid>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10">
             <TextBlock Text="请选择菜品"/>
-            <CheckBox Content="清椒肉丝1" Name="checkbox1"/>
-            <CheckBox Content="清椒肉丝2" Name="checkbox2"/>
-            <CheckBox Content="清椒肉丝3" Name="checkbox3"/>
-            <CheckBox Content="清椒肉丝4" Name="checkbox4"/>
+            <RadioButton GroupName="1" Content="清椒肉丝1" Name="checkbox1"/>
+            <RadioButton GroupName="1" Content="清椒肉丝2" Name="checkbox2"/>
+            <RadioButton GroupName="2" Content="清椒肉丝3" Name="checkbox3"/>
+            <RadioButton GroupName="3" Content="清椒肉丝4" Name="checkbox4"/>
             <Button Content="查看菜单" Click="Button_Click"/>
+            <RepeatButton Content="重复按钮" Delay="1000" Interval="500" Click="RepeatButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

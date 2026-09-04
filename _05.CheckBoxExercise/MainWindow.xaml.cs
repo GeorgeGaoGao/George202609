@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Microsoft.VisualBasic;
+using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -28,20 +30,33 @@ namespace _05.CheckBoxExercise
             {
                 orders.Add(checkbox1.Content.ToString());
             }
-            if (checkbox2.IsChecked==true)
+            if (checkbox2.IsChecked == true)
             {
                 orders.Add(checkbox2.Content.ToString());
             }
-            if (checkbox3.IsChecked==true)
+            if (checkbox3.IsChecked == true)
             {
                 orders.Add(checkbox3.Content.ToString());
             }
-            if (checkbox4.IsChecked==true)
+            if (checkbox4.IsChecked == true)
             {
                 orders.Add(checkbox4.Content.ToString());
             }
             string chosenOrders = string.Join(',', orders);
-            MessageBox.Show($"你选择的菜品是:{chosenOrders}");
+            if (chosenOrders.Length == 0)
+            {
+                MessageBox.Show($"你没有选择菜品。");
+            }
+            else
+            {
+                MessageBox.Show($"你选择的菜品是:{chosenOrders}");
+            }
+
+        }
+        private int count = 0;
+        private void RepeatButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine($"这是第{++count}次执行，当前时间是{DateTime.Now.ToLongTimeString()}.{DateTime.Now.Millisecond}");
         }
     }
 }

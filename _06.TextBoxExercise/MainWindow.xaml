@@ -1,0 +1,48 @@
+﻿<Window x:Class="_06.TextBoxExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06.TextBoxExercise"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="用户名" Margin="3"/>
+            <TextBox Width="200" Height="30" MaxLength="10" CharacterCasing="Upper" 
+                     SelectionChanged="TextBox_SelectionChanged"
+                     TextChanged="TextBox_TextChanged"/>
+            <Button Content="Button" Margin="3" Click="Button_Click"/>
+            
+        </StackPanel>
+        <RichTextBox Name="myRichTextBox" Grid.Column="1" Margin="3">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="这是一段富文本的句子的第1句。"/>
+                    <Run Text="这是一段富文本的句子的第2句。"/>
+                    <Run Text="这是一段富文本的句子的第3句。"/>
+                </Paragraph>
+                <Paragraph>
+                    <Bold Foreground="Blue">
+                        这是第二段</Bold>
+                </Paragraph>
+                <List MarkerStyle="Decimal" StartIndex="1">
+                    <ListItem>
+                        <Paragraph>列表的第一段</Paragraph>
+                        <Paragraph>列表的第一段</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>列表的第二段</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>列表的第三段</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
