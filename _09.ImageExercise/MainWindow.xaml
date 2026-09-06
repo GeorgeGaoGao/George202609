@@ -1,0 +1,56 @@
+﻿<Window x:Class="_09.ImageExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_09.ImageExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>-->
+    <Grid Name="myGrid" Width="{Binding ViewPortWidth}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Canvas Height="300">
+              <StackPanel Width="{Binding StackPanelActualWidth, Mode=OneWayToSource}"  Orientation="Horizontal" Canvas.Left="{Binding CanvasLeft}">
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1" >
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+                <Border BorderBrush="Green" Padding="3" Margin="3" BorderThickness="1">
+                     <Image Source="/Images/002.jpg" />
+                </Border>
+               
+               
+            </StackPanel>
+           
+        </Canvas>
+        <ScrollBar 
+           ViewportSize="{Binding ViewPortWidth, Mode=OneWayToSource}"
+            Maximum="{Binding ScrollMaximum, Mode=OneWayToSource}"
+            Value="{Binding X}"
+            VerticalAlignment="Center" Grid.Row="1" Orientation="Horizontal"/>
+
+
+
+
+    </Grid>
+   
+</Window>

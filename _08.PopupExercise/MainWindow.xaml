@@ -10,7 +10,8 @@
             <CheckBox Name="myCheckBox" Content="是否显示弹出菜单" Height="30"/>
             <Popup IsOpen="{Binding ElementName=myCheckBox, Path=IsChecked}" 
                PlacementTarget="{Binding ElementName=myCheckBox}"
-               
+               VerticalOffset="-100"
+               StaysOpen="False"
                >
                 <Border Background="Green" Width="200" Height="100">
                     <StackPanel>
