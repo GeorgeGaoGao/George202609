@@ -4,11 +4,35 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_17.MediaElementExercise"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
+        <MediaElement Name="myMediaElement" LoadedBehavior="Manual"/>
+        <Border Name="myBorder" Background="Black" >
+            <TextBlock Name="myTextBlockMask" Text="MediaElement | 媒体播放器" Foreground="LightCoral" FontSize="20"
+                       VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Border>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Margin="3"  Width="80" Content="打开" Click="OpenMedia"/>
+            <Button Margin="3"  Width="80" Content="播放" Click="PlayMedia"/>
+            <Button Margin="3"  Width="80" Content="停止" Click="StopMedia"/>
+            <Button Margin="3"  Width="80" Content="后退" Click="BackwardMedia"/>
+            <Button Margin="3"  Width="80" Content="前进" Click="ForwardMedia"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="3">
+                <TextBlock Margin="3"  Width="25" Text="音量" />
+                <Slider ValueChanged="mySlider_ValueChanged" Width="80" Name="mySlider" Minimum="0" Maximum="10" Value="5"/>
+            </StackPanel>
+
+
+        </StackPanel>
+        <Grid Grid.Row="2">
+             <ProgressBar Name="myProgressBar" Height="10" Grid.Row="2" Margin="5" Minimum="0" Maximum="100" Value="0"/>
+        </Grid>
+       
     </Grid>
 </Window>
