@@ -9,4 +9,12 @@
   <Project Path="_07.ToolTipExercise/_07.ToolTipExercise.csproj" Id="4b458f8e-c8d6-4602-af4b-9c52a01e33e1" />
   <Project Path="_08.PopupExercise/_08.PopupExercise.csproj" Id="1032f1e1-e377-469f-b440-905c504d6496" />
   <Project Path="_09.ImageExercise/_09.ImageExercise.csproj" Id="5a26a9f0-f807-474a-bd7a-e027133035b4" />
+  <Project Path="_10.ScrollBarexercise/_10.ScrollBarexercise.csproj" Id="d7569b78-dcb5-4562-b1c7-becb529db8ff" />
+  <Project Path="_11.ScrollBarMVVM/_11.ScrollBarMVVM.csproj" Id="263b2e36-48bb-473c-af92-9bc239c4c7e7" />
+  <Project Path="_12.MVVMGridWidthTest/_12.MVVMGridWidthTest.csproj" Id="a8337642-01f6-45d1-8f5c-e76c58deb08f" />
+  <Project Path="_13.ProgressBarExercise/_13.ProgressBarExercise.csproj" Id="7a8e9da1-8ea5-4aa2-b564-e2d77180248b" />
+  <Project Path="_14.CalendarExercise/_14.CalendarExercise.csproj" Id="9c9914c5-d820-4ecb-b2b9-3ef344b6bc28" />
+  <Project Path="_15.DatePickerExercise/_15.DatePickerExercise.csproj" Id="e422974b-887e-4adc-ad87-6d23fcdf9115" />
+  <Project Path="_16.ExpanderExercise/_16.ExpanderExercise.csproj" Id="495a5c64-5b85-4703-9648-fa5476b8a1cc" />
+  <Project Path="_17.MediaElementExercise/_17.MediaElementExercise.csproj" Id="23769866-9f94-4ab2-846d-e951368f30ee" />
 </Solution>

@@ -25,8 +25,8 @@ namespace _09.ImageExercise
             string baseDirectory=AppDomain.CurrentDomain.BaseDirectory;
             string filePath = System.IO.Path.Combine(baseDirectory, "Images", "004.jpg");
             BitmapImage bitmapImage = new BitmapImage(new Uri(filePath));
-                
-            //this.myImage.Source=bitmapImage;
+
+            //this.myImage.Source = bitmapImage;
         }
     }
 }
