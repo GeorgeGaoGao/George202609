@@ -1,0 +1,44 @@
+﻿<Window x:Class="_23.ComboBoxExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_23.ComboBoxExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+
+        </Grid.ColumnDefinitions>
+        <ComboBox IsEditable="True" Name="myComboBox1" Height="30" Margin="20" 
+                  VerticalAlignment="Top" TextBoxBase.TextChanged="myComboBox1_TextChanged" >
+            
+        </ComboBox>
+        <ComboBox IsEditable="True" Name="myComboBox" Height="30" Margin="20 60" 
+                  VerticalAlignment="Top" 
+                  DisplayMemberPath="Name"
+                  SelectionChanged="myComboBox_SelectionChanged">
+            
+        </ComboBox>
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Name"/>
+                <TextBlock Name="nameTextBlock"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Age"/>
+                <TextBlock Name="ageTextBlock"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Address"/>
+                <TextBlock Name="addressTextBlock"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Telephone"/>
+                <TextBlock Name="telephoneTextBlock"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

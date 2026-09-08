@@ -1,0 +1,21 @@
+﻿<Window x:Class="_19.ItemsControlExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_19.ItemsControlExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <ItemsControl Name="myItemsControl" Background="LightBlue">
+        <Button Content="button" Margin="5" Click="Button_Click" />
+        <TextBlock Text="collection control" Margin="5" FontSize="20"/>
+        <Border Background="LightCoral" Margin="5" Height="30"/>
+        <ItemsControl Height="50" Margin="5" Background="AliceBlue"/>
+        <StackPanel Orientation="Horizontal">
+            <RadioButton Content="初级"/>
+            <RadioButton Content="中级"/>
+            <RadioButton Content="高级"/>
+        </StackPanel>
+        
+    </ItemsControl>
+</Window>

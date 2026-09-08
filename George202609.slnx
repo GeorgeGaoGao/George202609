@@ -1,20 +1,29 @@
 <Solution>
+  <Folder Name="/Backup/">
+    <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
+    <Project Path="_02.PanelExercise/_02.PanelExercise.csproj" Id="85a4447b-80b9-434f-9055-47116fff0420" />
+    <Project Path="_03.ContentControlExercise/_03.ContentControlExercise.csproj" Id="64e04f9e-55f5-4976-be8b-22d84e2268be" />
+    <Project Path="_04.ToggleButtonExercise/_04.ToggleButtonExercise.csproj" Id="32a64892-6dd6-4b66-b9ba-5d367a4b5bfd" />
+    <Project Path="_05.CheckBoxExercise/_05.CheckBoxExercise.csproj" Id="895bd3e8-0b25-4fa2-9808-4d701b3fdc7c" />
+    <Project Path="_06.TextBoxExercise/_06.TextBoxExercise.csproj" Id="716b8d59-d5ad-432d-8592-0f64c59d6e54" />
+    <Project Path="_07.ToolTipExercise/_07.ToolTipExercise.csproj" Id="4b458f8e-c8d6-4602-af4b-9c52a01e33e1" />
+    <Project Path="_08.PopupExercise/_08.PopupExercise.csproj" Id="1032f1e1-e377-469f-b440-905c504d6496" />
+    <Project Path="_09.ImageExercise/_09.ImageExercise.csproj" Id="5a26a9f0-f807-474a-bd7a-e027133035b4" />
+    <Project Path="_10.ScrollBarexercise/_10.ScrollBarexercise.csproj" Id="d7569b78-dcb5-4562-b1c7-becb529db8ff" />
+    <Project Path="_11.ScrollBarMVVM/_11.ScrollBarMVVM.csproj" Id="263b2e36-48bb-473c-af92-9bc239c4c7e7" />
+    <Project Path="_12.MVVMGridWidthTest/_12.MVVMGridWidthTest.csproj" Id="a8337642-01f6-45d1-8f5c-e76c58deb08f" />
+    <Project Path="_13.ProgressBarExercise/_13.ProgressBarExercise.csproj" Id="7a8e9da1-8ea5-4aa2-b564-e2d77180248b" />
+    <Project Path="_14.CalendarExercise/_14.CalendarExercise.csproj" Id="9c9914c5-d820-4ecb-b2b9-3ef344b6bc28" />
+    <Project Path="_15.DatePickerExercise/_15.DatePickerExercise.csproj" Id="e422974b-887e-4adc-ad87-6d23fcdf9115" />
+    <Project Path="_16.ExpanderExercise/_16.ExpanderExercise.csproj" Id="495a5c64-5b85-4703-9648-fa5476b8a1cc" />
+    <Project Path="_17.MediaElementExercise/_17.MediaElementExercise.csproj" Id="23769866-9f94-4ab2-846d-e951368f30ee" />
+    <Project Path="_18.MediaElement2/_18.MediaElement2.csproj" Id="a5567507-ce2b-4ee1-91fb-5c340312ada4" />
+    <Project Path="_19.ItemsControlExercise/_19.ItemsControlExercise.csproj" Id="d3ab52c2-cecb-4f20-836d-095157eab55b" />
+    <Project Path="_20.ListBoxExercise/_20.ListBoxExercise.csproj" Id="948d0505-9d85-4ac8-83f7-8297de88a1e6" />
+  </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
-  <Project Path="_01.AppLifetimeExercise/_01.AppLifetimeExercise.csproj" Id="f2558260-5e19-47da-bae1-4f9a9a3dee0b" />
-  <Project Path="_02.PanelExercise/_02.PanelExercise.csproj" Id="85a4447b-80b9-434f-9055-47116fff0420" />
-  <Project Path="_03.ContentControlExercise/_03.ContentControlExercise.csproj" Id="64e04f9e-55f5-4976-be8b-22d84e2268be" />
-  <Project Path="_04.ToggleButtonExercise/_04.ToggleButtonExercise.csproj" Id="32a64892-6dd6-4b66-b9ba-5d367a4b5bfd" />
-  <Project Path="_05.CheckBoxExercise/_05.CheckBoxExercise.csproj" Id="895bd3e8-0b25-4fa2-9808-4d701b3fdc7c" />
-  <Project Path="_06.TextBoxExercise/_06.TextBoxExercise.csproj" Id="716b8d59-d5ad-432d-8592-0f64c59d6e54" />
-  <Project Path="_07.ToolTipExercise/_07.ToolTipExercise.csproj" Id="4b458f8e-c8d6-4602-af4b-9c52a01e33e1" />
-  <Project Path="_08.PopupExercise/_08.PopupExercise.csproj" Id="1032f1e1-e377-469f-b440-905c504d6496" />
-  <Project Path="_09.ImageExercise/_09.ImageExercise.csproj" Id="5a26a9f0-f807-474a-bd7a-e027133035b4" />
-  <Project Path="_10.ScrollBarexercise/_10.ScrollBarexercise.csproj" Id="d7569b78-dcb5-4562-b1c7-becb529db8ff" />
-  <Project Path="_11.ScrollBarMVVM/_11.ScrollBarMVVM.csproj" Id="263b2e36-48bb-473c-af92-9bc239c4c7e7" />
-  <Project Path="_12.MVVMGridWidthTest/_12.MVVMGridWidthTest.csproj" Id="a8337642-01f6-45d1-8f5c-e76c58deb08f" />
-  <Project Path="_13.ProgressBarExercise/_13.ProgressBarExercise.csproj" Id="7a8e9da1-8ea5-4aa2-b564-e2d77180248b" />
-  <Project Path="_14.CalendarExercise/_14.CalendarExercise.csproj" Id="9c9914c5-d820-4ecb-b2b9-3ef344b6bc28" />
-  <Project Path="_15.DatePickerExercise/_15.DatePickerExercise.csproj" Id="e422974b-887e-4adc-ad87-6d23fcdf9115" />
-  <Project Path="_16.ExpanderExercise/_16.ExpanderExercise.csproj" Id="495a5c64-5b85-4703-9648-fa5476b8a1cc" />
-  <Project Path="_17.MediaElementExercise/_17.MediaElementExercise.csproj" Id="23769866-9f94-4ab2-846d-e951368f30ee" />
+  <Project Path="_21.ListViewExercise/_21.ListViewExercise.csproj" Id="0e9a7858-5c8e-4bed-885a-e3f8ea0d7299" />
+  <Project Path="_22.DataGridExercise/_22.DataGridExercise.csproj" Id="6ea88361-af23-4166-90a8-7f87ff0101cb" />
+  <Project Path="_23.ComboBoxExercise/_23.ComboBoxExercise.csproj" Id="af5c657a-b4a1-47ec-8638-fe85e49f7280" />
+  <Project Path="_24.TabControlExercise/_24.TabControlExercise.csproj" Id="03744616-6dd7-44fd-9114-52d9e83f8c6d" />
 </Solution>
