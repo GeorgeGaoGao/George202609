@@ -26,4 +26,5 @@
   <Project Path="_22.DataGridExercise/_22.DataGridExercise.csproj" Id="6ea88361-af23-4166-90a8-7f87ff0101cb" />
   <Project Path="_23.ComboBoxExercise/_23.ComboBoxExercise.csproj" Id="af5c657a-b4a1-47ec-8638-fe85e49f7280" />
   <Project Path="_24.TabControlExercise/_24.TabControlExercise.csproj" Id="03744616-6dd7-44fd-9114-52d9e83f8c6d" />
+  <Project Path="_25.TreeViewExercise/_25.TreeViewExercise.csproj" Id="110a0e8f-7ee0-4558-89c8-887986a7937c" />
 </Solution>
