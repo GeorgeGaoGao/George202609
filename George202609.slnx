@@ -31,4 +31,6 @@
   <Project Path="_27.ContextMenuExercise/_27.ContextMenuExercise.csproj" Id="89b17aae-7398-4ae2-badd-2bfd326602a0" />
   <Project Path="_28.StatusBarExercise/_28.StatusBarExercise.csproj" Id="88042495-f39c-4eb6-9458-83ba3a5efdea" />
   <Project Path="_29.ShapeExercise/_29.ShapeExercise.csproj" Id="ee1c0497-8dd3-4253-98d3-c3b9f122f6ab" />
+  <Project Path="_30.RectangleExercise/_30.RectangleExercise.csproj" Id="c393d7db-cb3b-47ce-ab3b-1c33871750eb" />
+  <Project Path="_31.PolylineExercise/_31.PolylineExercise.csproj" Id="172152da-ca33-450c-b47a-7f37ed96474f" />
 </Solution>

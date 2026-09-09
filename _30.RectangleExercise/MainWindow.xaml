@@ -1,0 +1,18 @@
+﻿<Window x:Class="_30.RectangleExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_30.RectangleExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Rectangle Fill="Green" Width="{Binding ElementName=mySlider, Path=Value}" 
+                   Height="{Binding ElementName=mySlider,Path=Value}"
+                   RadiusX="{Binding ElementName=mySlider, Path=Value}"
+                   RadiusY="{Binding ElementName=mySlider, Path=Value}"
+                   />
+        <Rectangle/>
+        <Slider Name="mySlider" Width="600" Height="50" Minimum="0" Maximum="200" Canvas.Left="63" Canvas.Top="348" />
+    </Canvas>
+</Window>
