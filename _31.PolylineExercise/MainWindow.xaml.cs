@@ -25,14 +25,14 @@ namespace _31.PolylineExercise
 
         private void Window_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            if (_count++==0)
+            if (_count++ == 0)
             {
                 _polyline = new Polyline();
                 _polyline.Stroke = Brushes.Red;
                 _polyline.StrokeThickness = 2;
                 myCanvas.Children.Add(_polyline);
             }
-            Point point=e.GetPosition(myCanvas);
+            Point point = e.GetPosition(myCanvas);
             _polyline.Points.Add(point);
         }
 

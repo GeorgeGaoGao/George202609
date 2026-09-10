@@ -20,17 +20,21 @@
     <Project Path="_18.MediaElement2/_18.MediaElement2.csproj" Id="a5567507-ce2b-4ee1-91fb-5c340312ada4" />
     <Project Path="_19.ItemsControlExercise/_19.ItemsControlExercise.csproj" Id="d3ab52c2-cecb-4f20-836d-095157eab55b" />
     <Project Path="_20.ListBoxExercise/_20.ListBoxExercise.csproj" Id="948d0505-9d85-4ac8-83f7-8297de88a1e6" />
+    <Project Path="_21.ListViewExercise/_21.ListViewExercise.csproj" Id="0e9a7858-5c8e-4bed-885a-e3f8ea0d7299" />
+    <Project Path="_22.DataGridExercise/_22.DataGridExercise.csproj" Id="6ea88361-af23-4166-90a8-7f87ff0101cb" />
+    <Project Path="_23.ComboBoxExercise/_23.ComboBoxExercise.csproj" Id="af5c657a-b4a1-47ec-8638-fe85e49f7280" />
+    <Project Path="_24.TabControlExercise/_24.TabControlExercise.csproj" Id="03744616-6dd7-44fd-9114-52d9e83f8c6d" />
+    <Project Path="_25.TreeViewExercise/_25.TreeViewExercise.csproj" Id="110a0e8f-7ee0-4558-89c8-887986a7937c" />
+    <Project Path="_26.MenuExercise/_26.MenuExercise.csproj" Id="5ab3a5ab-b353-4c67-a46c-27d92d2e9b21" />
+    <Project Path="_27.ContextMenuExercise/_27.ContextMenuExercise.csproj" Id="89b17aae-7398-4ae2-badd-2bfd326602a0" />
+    <Project Path="_28.StatusBarExercise/_28.StatusBarExercise.csproj" Id="88042495-f39c-4eb6-9458-83ba3a5efdea" />
+    <Project Path="_29.ShapeExercise/_29.ShapeExercise.csproj" Id="ee1c0497-8dd3-4253-98d3-c3b9f122f6ab" />
+    <Project Path="_30.RectangleExercise/_30.RectangleExercise.csproj" Id="c393d7db-cb3b-47ce-ab3b-1c33871750eb" />
   </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
-  <Project Path="_21.ListViewExercise/_21.ListViewExercise.csproj" Id="0e9a7858-5c8e-4bed-885a-e3f8ea0d7299" />
-  <Project Path="_22.DataGridExercise/_22.DataGridExercise.csproj" Id="6ea88361-af23-4166-90a8-7f87ff0101cb" />
-  <Project Path="_23.ComboBoxExercise/_23.ComboBoxExercise.csproj" Id="af5c657a-b4a1-47ec-8638-fe85e49f7280" />
-  <Project Path="_24.TabControlExercise/_24.TabControlExercise.csproj" Id="03744616-6dd7-44fd-9114-52d9e83f8c6d" />
-  <Project Path="_25.TreeViewExercise/_25.TreeViewExercise.csproj" Id="110a0e8f-7ee0-4558-89c8-887986a7937c" />
-  <Project Path="_26.MenuExercise/_26.MenuExercise.csproj" Id="5ab3a5ab-b353-4c67-a46c-27d92d2e9b21" />
-  <Project Path="_27.ContextMenuExercise/_27.ContextMenuExercise.csproj" Id="89b17aae-7398-4ae2-badd-2bfd326602a0" />
-  <Project Path="_28.StatusBarExercise/_28.StatusBarExercise.csproj" Id="88042495-f39c-4eb6-9458-83ba3a5efdea" />
-  <Project Path="_29.ShapeExercise/_29.ShapeExercise.csproj" Id="ee1c0497-8dd3-4253-98d3-c3b9f122f6ab" />
-  <Project Path="_30.RectangleExercise/_30.RectangleExercise.csproj" Id="c393d7db-cb3b-47ce-ab3b-1c33871750eb" />
   <Project Path="_31.PolylineExercise/_31.PolylineExercise.csproj" Id="172152da-ca33-450c-b47a-7f37ed96474f" />
+  <Project Path="_32.PloygonExercise/_32.PloygonExercise.csproj" Id="9f042427-fa4a-4250-b393-fb44cc7c6950" />
+  <Project Path="_33.PathExercise/_33.PathExercise.csproj" Id="96eb05c3-2d48-4d2c-aa78-05c40d2b0341" />
+  <Project Path="_34.BindingExercise/_34.BindingExercise.csproj" Id="428a5680-3009-4d91-9733-799a40677198" />
+  <Project Path="_35.ValidationRulerExercise/_35.ValidationRulerExercise.csproj" Id="35cdae5e-2ebe-4f4b-ac42-8e9acafb7d8d" />
 </Solution>

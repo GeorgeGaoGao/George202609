@@ -1,0 +1,65 @@
+﻿<Window x:Class="_33.PathExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33.PathExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Name="outerstackpanel">
+        <StackPanel Name="innerstackpanel">
+            <Canvas>
+                <Path Stroke="Blue" Fill="Red">
+                    <Path.Data>
+                        <LineGeometry StartPoint="20 20" EndPoint="200 200"/>
+
+                    </Path.Data>
+                </Path>
+                <!--<Path Stroke="Blue" Fill="Red">
+            <Path.Data>
+                <EllipseGeometry RadiusX="200" RadiusY="100" Center="450 250" >
+                    <EllipseGeometry.Transform>
+                        <RotateTransform Angle="45" CenterX="450" CenterY="250">
+                            
+                        </RotateTransform>
+                    </EllipseGeometry.Transform>
+                </EllipseGeometry>
+            </Path.Data>
+        </Path>-->
+                <!--<Path Stroke="Blue" Fill="Red">
+            <Path.Data>
+                <RectangleGeometry Rect="100 100 120 240"/>
+            </Path.Data>
+        </Path>-->
+                <Path Stroke="Black" Fill="LightPink" StrokeThickness="5">
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathGeometry.Figures>
+                                <PathFigure StartPoint="150 200">
+                                    <LineSegment Point="400 200"/>
+                                    <ArcSegment Point="400 50" Size="100 50" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                                </PathFigure>
+
+                                <PathFigure StartPoint="160 200">
+                                    <LineSegment Point="400 200"/>
+                                    <ArcSegment Point="400 50" Size="100 50" IsLargeArc="False" SweepDirection="Counterclockwise"/>
+                                    <BezierSegment Point3="50 400" Point1="300 300" Point2="10 280"/>
+                                </PathFigure>
+                            </PathGeometry.Figures>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
+                <Path Stroke="Green" Fill="Orange" StrokeThickness="2" Data="M 160 200 L 400 200 
+              A 100 50 0 0 0 400 50  C 300 300 10 200 50 400">
+                    <Path.RenderTransform>
+                        <TranslateTransform X="300"/>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+            <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=StackPanel, AncestorLevel=2}, Path=Name}"/>
+        </StackPanel>
+    </StackPanel>
+
+
+</Window>
