@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _35.ValidationRulerExercise
+namespace _35.ValidationRuleExercise
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

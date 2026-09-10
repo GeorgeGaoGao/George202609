@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace _35.ValidationRulerExercise
+namespace _35.ValidationRuleExercise
 {
     /// <summary>
     /// Interaction logic for App.xaml

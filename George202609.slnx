@@ -36,5 +36,5 @@
   <Project Path="_32.PloygonExercise/_32.PloygonExercise.csproj" Id="9f042427-fa4a-4250-b393-fb44cc7c6950" />
   <Project Path="_33.PathExercise/_33.PathExercise.csproj" Id="96eb05c3-2d48-4d2c-aa78-05c40d2b0341" />
   <Project Path="_34.BindingExercise/_34.BindingExercise.csproj" Id="428a5680-3009-4d91-9733-799a40677198" />
-  <Project Path="_35.ValidationRulerExercise/_35.ValidationRulerExercise.csproj" Id="35cdae5e-2ebe-4f4b-ac42-8e9acafb7d8d" />
+  <Project Path="_35.ValidationRuleExercise/_35.ValidationRuleExercise.csproj" Id="0531e578-dc3a-456f-978e-9f50f48c0a73" />
 </Solution>
