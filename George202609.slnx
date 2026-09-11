@@ -37,4 +37,6 @@
   <Project Path="_33.PathExercise/_33.PathExercise.csproj" Id="96eb05c3-2d48-4d2c-aa78-05c40d2b0341" />
   <Project Path="_34.BindingExercise/_34.BindingExercise.csproj" Id="428a5680-3009-4d91-9733-799a40677198" />
   <Project Path="_35.ValidationRuleExercise/_35.ValidationRuleExercise.csproj" Id="0531e578-dc3a-456f-978e-9f50f48c0a73" />
+  <Project Path="_36.DatatriggerExercise/_36.DatatriggerExercise.csproj" Id="ad375778-63ee-4fb4-89ba-875b07dd4433" />
+  <Project Path="_37.EventTriggerExercise/_37.EventTriggerExercise.csproj" Id="01db132e-fef8-47c1-8d9f-77592bacbedf" />
 </Solution>

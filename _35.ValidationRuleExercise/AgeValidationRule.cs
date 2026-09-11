@@ -12,7 +12,7 @@ namespace _35.ValidationRuleExercise
         {
             if (int.TryParse(value.ToString(),out int age)&& age >= 0 && age <= 120)
             {
-                    return new ValidationResult(true, null);
+                    return new ValidationResult(true, "验证通过");
             }
             else
             {

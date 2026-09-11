@@ -14,7 +14,7 @@ namespace _35.ValidationRuleExercise
             {
 
 
-                return new ValidationResult(true, null);
+                return new ValidationResult(true,"验证通过");
 
             }
             else

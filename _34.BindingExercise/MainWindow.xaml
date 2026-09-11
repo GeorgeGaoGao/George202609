@@ -26,7 +26,8 @@
             <TextBlock Text="{Binding Person.Name}"/>
             <TextBlock Text="{Binding Person.Age}"/>
             <TextBlock Text="{Binding Person.Address}"/>
-            <TextBlock Text="称号:  ">
+            <TextBlock>
+                <Run Text="称号： "/>
                 <Run>
                     <Run.Text>
                         <MultiBinding Converter="{StaticResource AgeMoneyMultiConverter}">

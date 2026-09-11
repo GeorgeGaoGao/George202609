@@ -12,15 +12,39 @@
     <StackPanel Grid.Column="1" >
         <TextBox  Margin="5">
             <TextBox.Text>
-                <Binding Path="Person.Name">
+                <Binding Path="Person.Name" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <local:NameValidationRule ValidatesOnTargetUpdated="True"/>
                     </Binding.ValidationRules>
                 </Binding>
-                
             </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate TargetType="Control">
+                    <Grid  >
+                        <AdornedElementPlaceholder />
+                        <TextBlock Foreground="Red"
+                       Text="{Binding [0].ErrorContent}" HorizontalAlignment="Right"/>
+                    </Grid>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
         </TextBox>
-        <TextBox Text="{Binding Person.Age,UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+        <TextBox>
+            <TextBox.Text>
+                <Binding Path="Person.Age" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <local:AgeValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate TargetType="Control">
+                    <Grid >
+                        <AdornedElementPlaceholder/>
+                        <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red" HorizontalAlignment="Right"/>
+                    </Grid>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
         <TextBox Text="{Binding Person.Address,UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
         <TextBox Text="{Binding Person.Money,UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
         <TextBlock Text="{Binding Person.Name}"/>
