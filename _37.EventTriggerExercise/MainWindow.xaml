@@ -6,6 +6,26 @@
         xmlns:local="clr-namespace:_37.EventTriggerExercise"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="myCheckBox">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:0.5" To="0" Storyboard.TargetProperty="Width" Storyboard.TargetName="myLeftBorder"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ToggleButton.Unchecked" SourceName="myCheckBox">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:0.5" To="188" Storyboard.TargetName="myLeftBorder" Storyboard.TargetProperty="Width"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
@@ -13,6 +33,61 @@
         </Grid.ColumnDefinitions>
         <Border Name="myLeftBorder" Width="188" Grid.Column="0" Background="LightCyan">
             <TextBlock Text="菜单区域"/>
+        </Border>
+        <Border Name="myRightBorder" Grid.Column="1" >
+            <CheckBox Name="myCheckBox">
+                <CheckBox.Style>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="Width" Value="100"/>
+                            <Setter Property="Height" Value="100"/>
+                            <Setter Property="Background" Value="LightGreen"/>
+                            <Setter Property="Content" Value="开"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="CheckBox">
+                                        <Border Width="{TemplateBinding Width}"
+                                                Height="{TemplateBinding Height}"
+                                                Background="{TemplateBinding Background}"
+                                                CornerRadius="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Width}"
+                                                 >
+                                            <TextBlock Text="{TemplateBinding Content}" VerticalAlignment="center"
+                                                       HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style.Setters>
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="Red"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Content" Value="关"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.3" To="120" Storyboard.TargetProperty="Width"/>
+                                            <DoubleAnimation Duration="0:0:0.3" To="120" Storyboard.TargetProperty="Height"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.3" To="100" Storyboard.TargetProperty="Width"/>
+                                            <DoubleAnimation Duration="0:0:0.3" To="100" Storyboard.TargetProperty="Height"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </CheckBox.Style>
+            </CheckBox>
         </Border>
     </Grid>
 </Window>
