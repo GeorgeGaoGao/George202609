@@ -41,4 +41,6 @@
   <Project Path="_37.EventTriggerExercise/_37.EventTriggerExercise.csproj" Id="01db132e-fef8-47c1-8d9f-77592bacbedf" />
   <Project Path="_38.TemplateExercise/_38.TemplateExercise.csproj" Id="b0db55dc-b257-4207-9ee5-f3a66342b472" />
   <Project Path="_39.ControlTemplateExercise/_39.ControlTemplateExercise.csproj" Id="66df7768-c226-41a6-9aca-ac0991f65421" />
+  <Project Path="_40.PersonCardExercise/_40.PersonCardExercise.csproj" Id="aa172a22-5ce3-48a0-83ec-e5dfe61b3794" />
+  <Project Path="_41.SmallProjectExercise/_41.SmallProjectExercise.csproj" Id="d320a6a4-a27f-4e28-89f7-666ab6395de1" />
 </Solution>
