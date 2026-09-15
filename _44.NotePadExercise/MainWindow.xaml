@@ -16,6 +16,16 @@
         <CommandBinding Command="ApplicationCommands.Save" CanExecute="SaveCommandCanExecute" Executed="SaveCommandExecuted"/>
     </Window.CommandBindings>
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="打开" Margin="5" Command="ApplicationCommands.Open"/>
+            <Button Content="剪切" Margin="5" Command="ApplicationCommands.Cut"/>
+            <Button Content="粘贴" Margin="5" Command="ApplicationCommands.Paste"/>
+            <Button Content="保存" Margin="5" Command="ApplicationCommands.Save"/>
+        </StackPanel>
+        <TextBox Name="myTextBox" Grid.Row="1" TextWrapping="Wrap"/>
     </Grid>
 </Window>
