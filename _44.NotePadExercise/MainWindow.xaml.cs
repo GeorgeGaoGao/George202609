@@ -53,7 +53,7 @@ namespace _44.NotePadExercise
 
         private void PasteCommandCanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = true;
+            e.CanExecute = false;
         }
 
         private void PasteCommandExecuted(object sender, ExecutedRoutedEventArgs e)

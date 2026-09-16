@@ -46,4 +46,5 @@
   <Project Path="_42.CommandExercise/_42.CommandExercise.csproj" Id="f9c070c2-1c5a-4207-82fb-db206e542520" />
   <Project Path="_43.RoutedUICommandExercise/_43.RoutedUICommandExercise.csproj" Id="08a0c884-0418-42c4-8fb7-57a34befc111" />
   <Project Path="_44.NotePadExercise/_44.NotePadExercise.csproj" Id="2b1de64b-02ae-4ef2-8af3-bab92ea191c5" />
+  <Project Path="_45.DependencyPropertyExercise/_45.DependencyPropertyExercise.csproj" Id="caa6b207-1344-4828-9752-df9c1bdd42d7" />
 </Solution>

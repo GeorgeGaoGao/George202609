@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_44.NotePadExercise"
+        xmlns:local="clr-namespace:_44.NotePadExercise" xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
@@ -26,6 +26,13 @@
             <Button Content="粘贴" Margin="5" Command="ApplicationCommands.Paste"/>
             <Button Content="保存" Margin="5" Command="ApplicationCommands.Save"/>
         </StackPanel>
-        <TextBox Name="myTextBox" Grid.Row="1" TextWrapping="Wrap"/>
+        <TextBox Name="myTextBox" Grid.Row="1" TextWrapping="Wrap" >
+            <b:Interaction.Triggers>
+                <b:EventTrigger EventName="PreviewMouseDown">
+                    <b:InvokeCommandAction Command="{Binding TextBoxPreviewMouseDownCommand}" 
+                                           CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TextBox}}"/>
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
+        </TextBox>
     </Grid>
 </Window>
