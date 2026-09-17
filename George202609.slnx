@@ -51,4 +51,5 @@
   <Project Path="_47.AttachedPropertyExercise/_47.AttachedPropertyExercise.csproj" Id="54b8a130-d7fc-4f97-b194-730b06037ac1" />
   <Project Path="_48.RoutedEventExercise/_48.RoutedEventExercise.csproj" Id="d74a2c52-5d6f-4d3a-9b31-681126f96bca" />
   <Project Path="_49.RoutedEventExercise/_49.RoutedEventExercise.csproj" Id="d9b52ae7-db37-4b3a-a2df-cdc9e85f1e49" />
+  <Project Path="_50.WidgetRoutedEventExercise/_50.WidgetRoutedEventExercise.csproj" Id="a4f6f564-8337-436e-b85c-b596804aadf4" />
 </Solution>

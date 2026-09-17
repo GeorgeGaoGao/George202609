@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="_50.WidgetRoutedEventExercise.Controls.Widget"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_50.WidgetRoutedEventExercise.Controls"
+             mc:Ignorable="d" Name="widget"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="10">
+         <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel >
+            <TextBlock Text="{Binding ElementName=widget,Path=SalesValue}" FontSize="30" Margin="10 5 0 0"/>
+            <TextBlock Text="{Binding ElementName=widget,Path=Title}" FontSize="20" Margin="10 0 0 0"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <TextBlock Text="{Binding ElementName=widget,Path=Icon}" FontSize="30" Foreground="Orange" HorizontalAlignment="Right" Margin="0 0 20 0"/>
+        </Grid>
+            
+    </Grid>
+    </Border>
+   
+</UserControl>

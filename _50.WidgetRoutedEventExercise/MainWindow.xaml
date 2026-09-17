@@ -1,0 +1,16 @@
+﻿<Window x:Class="_50.WidgetRoutedEventExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_50.WidgetRoutedEventExercise" xmlns:controls="clr-namespace:_50.WidgetRoutedEventExercise.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <controls:Widget Title="年销售额" SalesValue="{Binding ElementName=salesValueSlider,Path=Value}"
+                         SalesTarget="{Binding ElementName=salesTargetSlider,Path=Value}"
+                         Width="200" Height="130" Completed="Widget_Completed"/>
+        <Slider Name="salesValueSlider" Width="300" Maximum="200000" Value="0" Margin="20"/>
+        <Slider Name="salesTargetSlider" Width="300" Maximum="200000" Value="0" Margin="20"/>
+    </StackPanel>
+</Window>
