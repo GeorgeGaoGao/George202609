@@ -1,0 +1,19 @@
+﻿<Window x:Class="_48.RoutedEventExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_48.RoutedEventExercise"
+        mc:Ignorable="d" PreviewMouseUp="Window_PreviewMouseUp"
+        MouseUp="Window_MouseUp"
+        Title="MainWindow" Height="450" Width="800">
+    <Border PreviewMouseUp="Border_PreviewMouseUp" MouseUp="Border_MouseUp" Background="Transparent">
+        <Canvas PreviewMouseUp="Canvas_PreviewMouseUp" MouseUp="Canvas_MouseUp" Background="Transparent" >
+            <Button Content="确定" Width="150" Height="50" Canvas.Left="100" Canvas.Top="100" 
+                    
+                    PreviewMouseUp="ButtonConfirm_PreviewMouseUp"/>
+            <Button Content="取消" Width="150" Height="50" Canvas.Left="300" Canvas.Top="100"
+                    MouseUp="CancelButton_MouseUp"/>
+        </Canvas>
+    </Border>
+</Window>

@@ -35,16 +35,20 @@
     <Project Path="_33.PathExercise/_33.PathExercise.csproj" Id="96eb05c3-2d48-4d2c-aa78-05c40d2b0341" />
     <Project Path="_34.BindingExercise/_34.BindingExercise.csproj" Id="428a5680-3009-4d91-9733-799a40677198" />
     <Project Path="_35.ValidationRuleExercise/_35.ValidationRuleExercise.csproj" Id="0531e578-dc3a-456f-978e-9f50f48c0a73" />
+    <Project Path="_36.DatatriggerExercise/_36.DatatriggerExercise.csproj" Id="ad375778-63ee-4fb4-89ba-875b07dd4433" />
+    <Project Path="_37.EventTriggerExercise/_37.EventTriggerExercise.csproj" Id="01db132e-fef8-47c1-8d9f-77592bacbedf" />
+    <Project Path="_38.TemplateExercise/_38.TemplateExercise.csproj" Id="b0db55dc-b257-4207-9ee5-f3a66342b472" />
+    <Project Path="_39.ControlTemplateExercise/_39.ControlTemplateExercise.csproj" Id="66df7768-c226-41a6-9aca-ac0991f65421" />
+    <Project Path="_40.PersonCardExercise/_40.PersonCardExercise.csproj" Id="aa172a22-5ce3-48a0-83ec-e5dfe61b3794" />
+    <Project Path="_41.SmallProjectExercise/_41.SmallProjectExercise.csproj" Id="d320a6a4-a27f-4e28-89f7-666ab6395de1" />
+    <Project Path="_42.CommandExercise/_42.CommandExercise.csproj" Id="f9c070c2-1c5a-4207-82fb-db206e542520" />
+    <Project Path="_43.RoutedUICommandExercise/_43.RoutedUICommandExercise.csproj" Id="08a0c884-0418-42c4-8fb7-57a34befc111" />
+    <Project Path="_44.NotePadExercise/_44.NotePadExercise.csproj" Id="2b1de64b-02ae-4ef2-8af3-bab92ea191c5" />
   </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
-  <Project Path="_36.DatatriggerExercise/_36.DatatriggerExercise.csproj" Id="ad375778-63ee-4fb4-89ba-875b07dd4433" />
-  <Project Path="_37.EventTriggerExercise/_37.EventTriggerExercise.csproj" Id="01db132e-fef8-47c1-8d9f-77592bacbedf" />
-  <Project Path="_38.TemplateExercise/_38.TemplateExercise.csproj" Id="b0db55dc-b257-4207-9ee5-f3a66342b472" />
-  <Project Path="_39.ControlTemplateExercise/_39.ControlTemplateExercise.csproj" Id="66df7768-c226-41a6-9aca-ac0991f65421" />
-  <Project Path="_40.PersonCardExercise/_40.PersonCardExercise.csproj" Id="aa172a22-5ce3-48a0-83ec-e5dfe61b3794" />
-  <Project Path="_41.SmallProjectExercise/_41.SmallProjectExercise.csproj" Id="d320a6a4-a27f-4e28-89f7-666ab6395de1" />
-  <Project Path="_42.CommandExercise/_42.CommandExercise.csproj" Id="f9c070c2-1c5a-4207-82fb-db206e542520" />
-  <Project Path="_43.RoutedUICommandExercise/_43.RoutedUICommandExercise.csproj" Id="08a0c884-0418-42c4-8fb7-57a34befc111" />
-  <Project Path="_44.NotePadExercise/_44.NotePadExercise.csproj" Id="2b1de64b-02ae-4ef2-8af3-bab92ea191c5" />
   <Project Path="_45.DependencyPropertyExercise/_45.DependencyPropertyExercise.csproj" Id="caa6b207-1344-4828-9752-df9c1bdd42d7" />
+  <Project Path="_46.TrayControlProject/_46.TrayControlProject.csproj" Id="26493541-556b-4659-b922-b75183889df8" />
+  <Project Path="_47.AttachedPropertyExercise/_47.AttachedPropertyExercise.csproj" Id="54b8a130-d7fc-4f97-b194-730b06037ac1" />
+  <Project Path="_48.RoutedEventExercise/_48.RoutedEventExercise.csproj" Id="d74a2c52-5d6f-4d3a-9b31-681126f96bca" />
+  <Project Path="_49.RoutedEventExercise/_49.RoutedEventExercise.csproj" Id="d9b52ae7-db37-4b3a-a2df-cdc9e85f1e49" />
 </Solution>
