@@ -6,7 +6,7 @@ using System.Windows.Controls;
 
 namespace _47.AttachedPropertyExercise
 {
-    public class PasswordHelper : DependencyObject
+    public class PasswordHelper 
     {
 
 

@@ -51,14 +51,19 @@ namespace _50.WidgetRoutedEventExercise.Controls
         private static void OnSalesValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d is not Widget widget) return;
-            if (widget.SalesTarget>0&&widget.SalesValue>widget.SalesTarget)
+            if (e.NewValue is not double realValue) return;
+
+            if (realValue>widget.SalesTarget)
             {
+                widget.Icon = "@@棒@@";
                 widget.RaiseCompletedEvent();
             }
             else
             {
                 widget.Icon = "***";
             }
+          
+
 
         }
 

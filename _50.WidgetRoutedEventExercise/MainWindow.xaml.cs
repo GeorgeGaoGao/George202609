@@ -25,13 +25,17 @@ namespace _50.WidgetRoutedEventExercise
         private void Widget_Completed(object sender, RoutedEventArgs e)
         {
             Widget widget = sender as Widget;
-            if (widget.SalesValue > widget.SalesTarget)
-            {
-                widget.Icon = "@@@";
-               
-            }
-         
+            myListBox.Items.Add(widget.SalesValue);
+            widget.RaiseEvent(new RoutedEventArgs(SalesManager.CheckEvent));
+        }
 
+        private void Widget_Check(object sender, RoutedEventArgs e)
+        {
+            Widget widget = sender as Widget;
+            if ((int)(widget.SalesValue) % 50000 < 5000)
+            {
+                myListBox.Items.Add($"该分红了，当前销售额{widget.SalesValue}");
+            }
         }
     }
 }

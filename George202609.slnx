@@ -52,4 +52,8 @@
   <Project Path="_48.RoutedEventExercise/_48.RoutedEventExercise.csproj" Id="d74a2c52-5d6f-4d3a-9b31-681126f96bca" />
   <Project Path="_49.RoutedEventExercise/_49.RoutedEventExercise.csproj" Id="d9b52ae7-db37-4b3a-a2df-cdc9e85f1e49" />
   <Project Path="_50.WidgetRoutedEventExercise/_50.WidgetRoutedEventExercise.csproj" Id="a4f6f564-8337-436e-b85c-b596804aadf4" />
+  <Project Path="_51.TransformExercise/_51.TransformExercise.csproj" Id="f823257c-0820-423a-8cec-f879c1416f09" />
+  <Project Path="_52.SkewTransformExercise/_52.SkewTransformExercise.csproj" Id="cef7fa37-0d71-4502-9c41-b0e741a0dba9" />
+  <Project Path="_53.TranslateTransformExercise/_53.TranslateTransformExercise.csproj" Id="068f1a87-bcfc-4636-bad1-453fe34c02fe" />
+  <Project Path="_54.PictureViewDemo/_54.PictureViewDemo.csproj" Id="9def5fcf-42e7-49b8-baa8-65eb2b66efed" />
 </Solution>
