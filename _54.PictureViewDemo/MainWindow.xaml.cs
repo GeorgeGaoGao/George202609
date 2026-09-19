@@ -30,7 +30,17 @@ namespace _54.PictureViewDemo
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            _viewModel = DataContext as MainWindowViewModel;
+            //_viewModel = (MainWindowViewModel)DataContext;
+            try
+            {
+                _viewModel = DataContext as MainWindowViewModel ?? throw new InvalidOperationException($"DataContext应当是MainWindowViewModel类型，实际为{DataContext?.GetType()}");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             _transformGroup.Children.Add(_scaleTransform);
             _transformGroup.Children.Add(_translateTransform);
             myImage.RenderTransform = _transformGroup;
@@ -84,6 +94,48 @@ namespace _54.PictureViewDemo
 
             _translateTransform.X = -(inversePoint.X * _scaleTransform.ScaleX - newMousePosition.X);
             _translateTransform.Y = -(inversePoint.Y * _scaleTransform.ScaleY - newMousePosition.Y);
+        }
+
+       
+
+        private void myGrid_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (myGrid.Background is LinearGradientBrush gridBrush)
+            {
+                GradientStop gradientStop0 = gridBrush.GradientStops[0];
+                GradientStop gradientStop1 = gridBrush.GradientStops[1];
+
+                Point mousePosition = e.GetPosition(myGrid);
+                var ossfet = (mousePosition.X) / (myGrid.ActualWidth );
+
+                gradientStop0.Offset = ossfet;
+                gradientStop1.Offset =1- ossfet;
+            }
+            
+            
+        }
+
+        private void Border_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (myEllipse.Fill is RadialGradientBrush gradientBrush)
+            {
+                Point mousePoint = e.GetPosition(myEllipse);
+                var x = mousePoint.X / myEllipse.ActualWidth;
+                var y =mousePoint.Y/myEllipse.ActualHeight;
+                gradientBrush.GradientOrigin= new Point(x, y);
+            }
+        }
+
+        private void myEllipse_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (myEllipse.Fill is RadialGradientBrush gradientBrush)
+            {
+                Point mousePoint = e.GetPosition(myEllipse);
+                var x = mousePoint.X / myEllipse.ActualWidth;
+                var y = mousePoint.Y / myEllipse.ActualHeight;
+                gradientBrush.GradientStops[1].Color = Color.FromRgb(0, 0, 0);
+                gradientBrush.GradientOrigin = new Point(x, y);
+            }
         }
     }
 }

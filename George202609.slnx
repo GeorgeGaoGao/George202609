@@ -56,4 +56,5 @@
   <Project Path="_52.SkewTransformExercise/_52.SkewTransformExercise.csproj" Id="cef7fa37-0d71-4502-9c41-b0e741a0dba9" />
   <Project Path="_53.TranslateTransformExercise/_53.TranslateTransformExercise.csproj" Id="068f1a87-bcfc-4636-bad1-453fe34c02fe" />
   <Project Path="_54.PictureViewDemo/_54.PictureViewDemo.csproj" Id="9def5fcf-42e7-49b8-baa8-65eb2b66efed" />
+  <Project Path="_55.ImageBrushExercise/_55.ImageBrushExercise.csproj" Id="e780edfd-ca7f-4a6c-a15d-2d775f2fa1ff" />
 </Solution>

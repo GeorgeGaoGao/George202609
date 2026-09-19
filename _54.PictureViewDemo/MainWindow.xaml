@@ -25,5 +25,31 @@
             <Run Text="Delta: "/>
             <Run Text="{Binding Delta}"/>
         </TextBlock>
+        <Grid Name="myGrid" MouseMove="myGrid_MouseMove">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="green" Offset="0"/>
+                        <GradientStop Color="#008080" Offset="0.5"/>
+                        <GradientStop Color="Blue" Offset="1"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>                
+           
+            </Grid.Background>
+            <Border BorderBrush="Red" BorderThickness="2"  Width="500" Height="500" Background="White">
+                <Ellipse MouseMove="myEllipse_MouseMove" Width="200" Height="200" Name="myEllipse">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5 0.5" RadiusX="0.5" RadiusY="0.5" >
+                            <RadialGradientBrush.GradientStops>
+                                <GradientStop Color="White" Offset="0"/>
+                              
+                                <GradientStop Color="red" Offset="0.65"/>
+                                <GradientStop Color="Gray" Offset="0.85"/>
+                            </RadialGradientBrush.GradientStops>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
