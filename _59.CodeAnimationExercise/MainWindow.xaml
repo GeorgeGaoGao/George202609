@@ -1,23 +1,18 @@
-﻿<Window x:Class="_57.DropShadowEffectExercise.MainWindow"
+﻿<Window x:Class="_59.CodeAnimationExercise.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_57.DropShadowEffectExercise"
+        xmlns:local="clr-namespace:_59.CodeAnimationExercise"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Name="myGrid" MouseMove="Grid_MouseMove" Background="Transparent">
-        <Button Name="myButton" Width="200" Height="50" Content="Hello,Button!">
-            <Button.Effect>
-                <DropShadowEffect ShadowDepth="10" Color="Gray" BlurRadius="10" Direction="45"/>
-            </Button.Effect>
-        </Button>
+    <Grid Name="myGrid" MouseUp="Grid_MouseUp">
         <Ellipse Name="myEllipse" Width="200" Height="200">
-            <Ellipse.Effect>
-                <BlurEffect Radius="10" KernelType="Box"/>
-            </Ellipse.Effect>
+            <Ellipse.RenderTransform>
+                <ScaleTransform CenterX="100" CenterY="100"/>
+            </Ellipse.RenderTransform>
             <Ellipse.Fill>
-                <RadialGradientBrush GradientOrigin="0.25 0.25" RadiusX="0.75" RadiusY="0.75">
+                <RadialGradientBrush RadiusX="0.75" RadiusY="0.75" GradientOrigin="0.25 0.25">
                     <RadialGradientBrush.GradientStops>
                         <GradientStop Color="White" Offset="0"/>
                         <GradientStop Color="Goldenrod" Offset="0.65"/>

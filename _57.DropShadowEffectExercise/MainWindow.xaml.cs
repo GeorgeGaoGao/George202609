@@ -32,6 +32,13 @@ namespace _57.DropShadowEffectExercise
 
             DropShadowEffect dropShadowEffect=myButton.Effect as DropShadowEffect;
             dropShadowEffect.Direction=-direction;
+
+            var distance=Math.Sqrt(Math.Pow(mousePoint.X - centerPoint.X, 2)+Math.Pow(mousePoint.Y - centerPoint.Y, 2));
+            dropShadowEffect.ShadowDepth=distance/10;
+            dropShadowEffect.BlurRadius=distance/10;
+
+            BlurEffect blurEffect=myEllipse.Effect as BlurEffect;
+            blurEffect.Radius=distance/10;
         }
     }
 }

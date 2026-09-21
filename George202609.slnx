@@ -59,4 +59,6 @@
   <Project Path="_55.ImageBrushExercise/_55.ImageBrushExercise.csproj" Id="e780edfd-ca7f-4a6c-a15d-2d775f2fa1ff" />
   <Project Path="_56.VisualBrushExercise/_56.VisualBrushExercise.csproj" Id="6ed4003e-c96c-457f-b691-bab1f31622a1" />
   <Project Path="_57.DropShadowEffectExercise/_57.DropShadowEffectExercise.csproj" Id="bb44d396-8bd4-4858-b0d1-4efa28aa93ee" />
+  <Project Path="_58.DoubleAnimationExercise/_58.DoubleAnimationExercise.csproj" Id="e6e4994b-5c8d-44ef-910c-66f00cc5ddf3" />
+  <Project Path="_59.CodeAnimationExercise/_59.CodeAnimationExercise.csproj" Id="77a179dc-a72e-41da-a115-3230ce5ba8dc" />
 </Solution>
