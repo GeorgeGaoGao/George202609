@@ -20,6 +20,7 @@
     </Window.Resources>
     <Grid Name="myGrid" MouseUp="Grid_MouseUp" MouseMove="myGrid_MouseMove" Background="Transparent">
         <Ellipse Name="myEllipse" Width="200" Height="200">
+            <Interactions/>
             <Ellipse.RenderTransform>
                 <ScaleTransform CenterX="100" CenterY="100"/>
             </Ellipse.RenderTransform>

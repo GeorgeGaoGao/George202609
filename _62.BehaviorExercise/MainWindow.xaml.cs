@@ -42,28 +42,10 @@ namespace _62.BehaviorExercise
         protected override void OnDetaching()
         {
             base.OnDetaching();
-            AssociatedObject.MouseEnter-= AssociatedObject_MouseEnter;
-            AssociatedObject.MouseLeave-= AssociatedObject_MouseLeave;
+            AssociatedObject.MouseEnter -= AssociatedObject_MouseEnter;
+            AssociatedObject.MouseLeave -= AssociatedObject_MouseLeave;
         }
-        //protected override void OnAttached()
-        //{
-        //    base.OnAttached();
-        //    AssociatedObject.MouseEnter += OnMouseEnter;
-        //    AssociatedObject.MouseLeave += OnMouseLeave;
-        //}
 
-        //protected override void OnDetaching()
-        //{
-        //    base.OnDetaching();
-        //    AssociatedObject.MouseEnter -= OnMouseEnter;
-        //    AssociatedObject.MouseLeave -= OnMouseLeave;
-        //}
-
-        //private void OnMouseEnter(object sender, MouseEventArgs e)
-        //    => AssociatedObject.Opacity = 0.5;
-
-        //private void OnMouseLeave(object sender, MouseEventArgs e)
-        //    => AssociatedObject.Opacity = 1.0;
     }
 
     public class TextBlockShadowBehavior : Behavior<UIElement>
@@ -102,21 +84,20 @@ namespace _62.BehaviorExercise
 
     }
 
-    
-    public class DragBehavior:Behavior<FrameworkElement> 
+
+    public class DragBehavior : Behavior<FrameworkElement>
     {
-        private bool _isDragging=false;
+        private bool _isDragging = false;
         private Point _startPoint;
         private FrameworkElement _parent;
-        private TranslateTransform _translateTransform=new TranslateTransform();
-        public DragBehavior()
-        {
-            _parent = AssociatedObject.Parent as FrameworkElement;
-            AssociatedObject.RenderTransform = _translateTransform;
-        }
+        private TranslateTransform _translateTransform = new TranslateTransform();
+
         protected override void OnAttached()
         {
             base.OnAttached();
+            _parent = AssociatedObject.Parent as FrameworkElement;
+            AssociatedObject.RenderTransform = _translateTransform;
+
             AssociatedObject.MouseDown += AssociatedObject_MouseDown;
             AssociatedObject.MouseMove += AssociatedObject_MouseMove;
             AssociatedObject.MouseUp += AssociatedObject_MouseUp;
@@ -125,21 +106,32 @@ namespace _62.BehaviorExercise
         private void AssociatedObject_MouseDown(object sender, MouseButtonEventArgs e)
         {
             _isDragging = true;
-            _startPoint = e.GetPosition(_parent);
+            Point currentPosition = e.GetPosition(_parent);
+
+            if (!(AssociatedObject.RenderTransform is TranslateTransform))
+            {
+                AssociatedObject.RenderTransform = _translateTransform;
+            }
+            _startPoint.X = currentPosition.X - _translateTransform.X;
+            _startPoint.Y = currentPosition.Y - _translateTransform.Y;
         }
 
         private void AssociatedObject_MouseMove(object sender, MouseEventArgs e)
         {
-            Point currentPoint=e.GetPosition(_parent);
-            double x = currentPoint.X - _startPoint.X;
-            double y=currentPoint.Y - _startPoint.Y;
-            _translateTransform.X = x;
-            _translateTransform.Y= y;
+            if (_isDragging)
+            {
+                Point currentPoint = e.GetPosition(_parent);
+                double x = currentPoint.X - _startPoint.X;
+                double y = currentPoint.Y - _startPoint.Y;
+                _translateTransform.X = x;
+                _translateTransform.Y = y;
+            }
+
         }
 
         private void AssociatedObject_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            _isDragging=false;
+            _isDragging = false;
         }
 
         protected override void OnDetaching()
