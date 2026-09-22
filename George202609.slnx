@@ -52,13 +52,16 @@
     <Project Path="_50.WidgetRoutedEventExercise/_50.WidgetRoutedEventExercise.csproj" Id="a4f6f564-8337-436e-b85c-b596804aadf4" />
     <Project Path="_51.TransformExercise/_51.TransformExercise.csproj" Id="f823257c-0820-423a-8cec-f879c1416f09" />
     <Project Path="_52.SkewTransformExercise/_52.SkewTransformExercise.csproj" Id="cef7fa37-0d71-4502-9c41-b0e741a0dba9" />
+    <Project Path="_53.TranslateTransformExercise/_53.TranslateTransformExercise.csproj" Id="068f1a87-bcfc-4636-bad1-453fe34c02fe" />
+    <Project Path="_54.PictureViewDemo/_54.PictureViewDemo.csproj" Id="9def5fcf-42e7-49b8-baa8-65eb2b66efed" />
+    <Project Path="_55.ImageBrushExercise/_55.ImageBrushExercise.csproj" Id="e780edfd-ca7f-4a6c-a15d-2d775f2fa1ff" />
+    <Project Path="_56.VisualBrushExercise/_56.VisualBrushExercise.csproj" Id="6ed4003e-c96c-457f-b691-bab1f31622a1" />
+    <Project Path="_57.DropShadowEffectExercise/_57.DropShadowEffectExercise.csproj" Id="bb44d396-8bd4-4858-b0d1-4efa28aa93ee" />
+    <Project Path="_58.DoubleAnimationExercise/_58.DoubleAnimationExercise.csproj" Id="e6e4994b-5c8d-44ef-910c-66f00cc5ddf3" />
+    <Project Path="_59.CodeAnimationExercise/_59.CodeAnimationExercise.csproj" Id="77a179dc-a72e-41da-a115-3230ce5ba8dc" />
   </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" />
-  <Project Path="_53.TranslateTransformExercise/_53.TranslateTransformExercise.csproj" Id="068f1a87-bcfc-4636-bad1-453fe34c02fe" />
-  <Project Path="_54.PictureViewDemo/_54.PictureViewDemo.csproj" Id="9def5fcf-42e7-49b8-baa8-65eb2b66efed" />
-  <Project Path="_55.ImageBrushExercise/_55.ImageBrushExercise.csproj" Id="e780edfd-ca7f-4a6c-a15d-2d775f2fa1ff" />
-  <Project Path="_56.VisualBrushExercise/_56.VisualBrushExercise.csproj" Id="6ed4003e-c96c-457f-b691-bab1f31622a1" />
-  <Project Path="_57.DropShadowEffectExercise/_57.DropShadowEffectExercise.csproj" Id="bb44d396-8bd4-4858-b0d1-4efa28aa93ee" />
-  <Project Path="_58.DoubleAnimationExercise/_58.DoubleAnimationExercise.csproj" Id="e6e4994b-5c8d-44ef-910c-66f00cc5ddf3" />
-  <Project Path="_59.CodeAnimationExercise/_59.CodeAnimationExercise.csproj" Id="77a179dc-a72e-41da-a115-3230ce5ba8dc" />
+  <Project Path="_60.CodeKeyFramesExercise/_60.CodeKeyFramesExercise.csproj" Id="27a52085-dfd1-4015-95e7-2aed69321142" />
+  <Project Path="_61.AnimationInStyleExercise/_61.AnimationInStyleExercise.csproj" Id="2ea80f4f-52c1-4e46-8089-195a21f8bf81" />
+  <Project Path="_62.BehaviorExercise/_62.BehaviorExercise.csproj" Id="e421f4ab-778d-4fc8-9184-0dd30ee8874b" />
 </Solution>

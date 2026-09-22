@@ -6,13 +6,30 @@
         xmlns:local="clr-namespace:_59.CodeAnimationExercise"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Name="myGrid" MouseUp="Grid_MouseUp">
+    <Window.Resources>
+        <Storyboard x:Key="gradientOriginAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="GradientOrigin" Storyboard.TargetName="myRadialBrush">
+                <PointAnimationUsingKeyFrames.KeyFrames>
+                    <LinearPointKeyFrame KeyTime="0:0:0" Value="0.25 0.25"/>
+                    <LinearPointKeyFrame KeyTime="0:0:1" Value="0.75 0.25"/>
+                    <LinearPointKeyFrame KeyTime="0:0:2" Value="0.25 0.75"/>
+                    <LinearPointKeyFrame KeyTime="0:0:3" Value="0.75 0.75"/>
+                </PointAnimationUsingKeyFrames.KeyFrames>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Grid Name="myGrid" MouseUp="Grid_MouseUp" MouseMove="myGrid_MouseMove" Background="Transparent">
         <Ellipse Name="myEllipse" Width="200" Height="200">
             <Ellipse.RenderTransform>
                 <ScaleTransform CenterX="100" CenterY="100"/>
             </Ellipse.RenderTransform>
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard Storyboard="{StaticResource gradientOriginAnimation}"/>
+                </EventTrigger>
+            </Ellipse.Triggers>
             <Ellipse.Fill>
-                <RadialGradientBrush RadiusX="0.75" RadiusY="0.75" GradientOrigin="0.25 0.25">
+                <RadialGradientBrush x:Name="myRadialBrush" RadiusX="0.75" RadiusY="0.75" GradientOrigin="0.25 0.25">
                     <RadialGradientBrush.GradientStops>
                         <GradientStop Color="White" Offset="0"/>
                         <GradientStop Color="Goldenrod" Offset="0.65"/>

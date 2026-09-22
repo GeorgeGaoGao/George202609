@@ -25,14 +25,29 @@ namespace _59.CodeAnimationExercise
         private void Grid_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Point mousePoint = e.GetPosition(myGrid);
-            double scale = (mousePoint.X + mousePoint.Y) / 100;
+            double scale = (mousePoint.X + mousePoint.Y) / 500;
 
-            ScaleTransform scaleTransform=myGrid.RenderTransform as ScaleTransform;
+          
+            
+            //动画就是一条时间线，能输出值。把这个输出值赋给某个DP，就可以实现动画效果。
+            ScaleTransform scaleTransform=myEllipse.RenderTransform as ScaleTransform;
             DoubleAnimation doubleAnimation = new DoubleAnimation();
             doubleAnimation.Duration = new TimeSpan(0,0,0,0,250);
-            doubleAnimation.To = 300;
-            myEllipse.BeginAnimation(ScaleTransform.ScaleXProperty, doubleAnimation);
-            BeginAnimation(ScaleTransform.ScaleYProperty, doubleAnimation);
+            doubleAnimation.To = scale;
+            scaleTransform.BeginAnimation(ScaleTransform.ScaleXProperty, doubleAnimation);
+            scaleTransform.BeginAnimation(ScaleTransform.ScaleYProperty, doubleAnimation);
+        }
+
+        private void myGrid_MouseMove(object sender, MouseEventArgs e)
+        {
+            Point mousePoint = e.GetPosition(myGrid);
+
+            var gradientOrigin = new Point(mousePoint.X / myGrid.ActualWidth, mousePoint.Y / myGrid.ActualHeight);
+
+            PointAnimation pointAnimation = new PointAnimation();
+            pointAnimation.To = gradientOrigin;
+            RadialGradientBrush radialGradientBrush = myEllipse.Fill as RadialGradientBrush;
+            radialGradientBrush.BeginAnimation(RadialGradientBrush.GradientOriginProperty, pointAnimation);
         }
     }
 }

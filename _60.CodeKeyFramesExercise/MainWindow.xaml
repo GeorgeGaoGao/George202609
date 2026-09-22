@@ -1,0 +1,71 @@
+﻿<Window x:Class="_60.CodeKeyFramesExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_60.CodeKeyFramesExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="PathAnimation"  
+                    Storyboard.TargetName="ellipseTranslateTransform"
+                    
+                    AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingPath BeginTime="0:0:0" Source="X" Duration="0:0:2" Storyboard.TargetProperty="X">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigure StartPoint="5 5">
+                                <BezierSegment Point1="200 50" Point2="50 200" Point3="350 250"/>
+                            </PathFigure>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+            <DoubleAnimationUsingPath BeginTime="0:0:0" Source="Y" Duration="0:0:2" Storyboard.TargetProperty="Y">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigure StartPoint="5 5">
+                                <BezierSegment Point1="200 50" Point2="50 200" Point3="350 250"/>
+                            </PathFigure>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+        </Storyboard>
+       
+    </Window.Resources>
+    <Canvas Name="myCanvas" MouseUp="Canvas_MouseUp">
+        <Canvas.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard Storyboard="{StaticResource PathAnimation}"/>
+            </EventTrigger>
+        </Canvas.Triggers>
+        <Canvas.Background>
+            <LinearGradientBrush StartPoint="0.1 0.5" EndPoint="0.8 0.1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="LightBlue" Offset="0"/>
+                    <GradientStop Color="LightYellow" Offset="0.5"/>
+                    <GradientStop Color="Coral" Offset="1"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Ellipse Name="myEllipse" Width="100" Height="100" Fill="Green" Canvas.Left="-45" Canvas.Top="-45">
+            <Ellipse.RenderTransform>
+                <TranslateTransform x:Name="ellipseTranslateTransform" />
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Path Stroke="Blue" StrokeThickness="1">
+            <Path.Data>
+                <PathGeometry>
+                    <PathGeometry.Figures>
+                        <PathFigure IsFilled="false" StartPoint="5 5">
+                            <BezierSegment  Point1="200 50" Point2="50 200" Point3="350 250"/>
+                        </PathFigure>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+    </Canvas>
+</Window>
