@@ -1,0 +1,30 @@
+﻿<Window x:Class="_64.RoutedEventExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_64.RoutedEventExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="gridRoot" Button.Click="ButtonClicked" local:TimeButton.ReportTime="ReportTimeHandler">
+        <Grid Name="gridA" local:TimeButton.ReportTime="ReportTimeHandler">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <Button Name="buttonLeft" Content="buttonLeft" Width="200" Height="50" />
+                <local:TimeButton x:Name="timeButton" Width="200" Height="50" Content="TimeButton"
+                              local:TimeButton.ReportTime="ReportTimeHandler"
+                              Margin="10"/>
+                <ListBox Name="myListBox"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Button Name="buttonRight" Content="buttonRight" Width="200" Height="50" />
+            </StackPanel>
+
+
+
+        </Grid>
+        </Grid>
+</Window>

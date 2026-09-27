@@ -21,7 +21,12 @@
             </Style.Setters>
         </Style>
     </Window.Resources>
-    <StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
         <local:MyButton Style="{StaticResource {x:Type Button}}" Content="显示自己的窗口" UserWindowType="{x:Type local:MainWindow}"/>
         <Button Content="show string" Width="200" Height="40" Click="Button_Click"/>
         <Button Content="2nd button"/>
@@ -47,4 +52,10 @@
 <!--这个rectangel在办公室的屏幕上宽度为132MM。按照物理尺寸一致的原则，它在家里屏幕上应也是这么宽。-->
         <Rectangle Width="500" Height="400" Stroke="Red" StrokeThickness="1"/>
     </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Name="myTextBox" Width="200" Height="50" TextWrapping="Wrap"/>
+            <Button Click="Button_Click_2" Content="AddName" Width="200" Height="50"/>
+        </StackPanel>
+    </Grid>
+    
 </Window>

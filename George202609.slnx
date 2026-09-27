@@ -65,4 +65,7 @@
   <Project Path="_61.AnimationInStyleExercise/_61.AnimationInStyleExercise.csproj" Id="2ea80f4f-52c1-4e46-8089-195a21f8bf81" />
   <Project Path="_62.BehaviorExercise/_62.BehaviorExercise.csproj" Id="e421f4ab-778d-4fc8-9184-0dd30ee8874b" />
   <Project Path="_63.BookReadingExercise/_63.BookReadingExercise.csproj" Id="0b232468-48b9-455f-a54d-395fafd058f7" />
+  <Project Path="_64.RoutedEventExercise/_64.RoutedEventExercise.csproj" Id="f887f5a3-18a1-40dd-bd60-8be0ce0f3eae" />
+  <Project Path="_65.AttachedEventExercise/_65.AttachedEventExercise.csproj" Id="108d4b2d-fcdb-4331-b9ca-d058c8f8556a" />
+  <Project Path="_66.CommandExercise/_66.CommandExercise.csproj" Id="95d3abb9-8541-4110-a910-37770c42fd0d" />
 </Solution>

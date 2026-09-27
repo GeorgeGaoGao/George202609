@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,12 +18,19 @@ namespace _63.BookReadingExercise
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Student Student { get; set; }
         public static string _windowTitle = "山高路远";
         public static string ShowText { get; set; } = "小心为上";
         public MainWindow()
         {
             InitializeComponent();
+            Student= new Student();
 
+            Binding binding = new Binding();
+            binding.Source = Student;
+            binding.Path=new PropertyPath("Name");
+
+           BindingOperations.SetBinding(this.myTextBox,TextBox.TextProperty, binding);
 
         }
 
@@ -46,6 +55,11 @@ namespace _63.BookReadingExercise
             DependencyObject lever3= VisualTreeHelper.GetParent(lever2);
             MessageBox.Show(lever3.GetType().ToString());
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Student.Name += "Name";
+        }
     }
 
     public class MyButton : Button
@@ -64,6 +78,23 @@ namespace _63.BookReadingExercise
             }
 
 
+        }
+    }
+
+    public class Student:INotifyPropertyChanged
+    {
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value;OnPropertyChanged(); }
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
